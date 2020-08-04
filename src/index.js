@@ -2,8 +2,8 @@ import Control from './Control'
 import Preview from './Preview'
 
 if (typeof window !== 'undefined') {
-  window.RatingControl = Control
-  window.RatingPreview = Preview
+  window.Control = Control
+  window.Preview = Preview
 }
 
-export { Control as RatingControl, Preview as RatingPreview }
+export { Control, Preview }
