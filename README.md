@@ -39,9 +39,7 @@ npm run build
 
 ### Rebuilding
 
-If you are rebuilding this package for production you'll need to make sure you update the Control and Preview names before running `npm run build`.
-
-1. Rename the exports in `src/index.js`. For example, if your widget is `netlify-cms-widget-awesome`, you would do:
+If you are rebuilding this package for production you'll need to make sure you update the Control and Preview names before running `npm run build`. eg.
   ```js
   if (typeof window !== 'undefined') {
   window.RatingControl = Control
