@@ -9,18 +9,29 @@ Uses a range slider with 0.5 step value between 0-10.
 ## How to use
 
 Add to your Netlify CMS configuration:
-```js
-// Using global window object
-CMS.registerWidget('rating', ratingControl, ratingPreview)
-
-// Using npm module import
-import CMS from 'netlify-cms';
-CMS.registerWidget('rating', ratingControl, ratingPreview)
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script src="https://unpkg.com/netlify-cms-widget-rating@0.0.1/dist/main.js"></script>
+    <script>
+        const ratingWidget = window.NetlifyCmsWidgetRating;
+        CMS.registerWidget('rating', ratingWidget.control, ratingWidget.preview);
+    </script>
+  </body>
+</html>
 ```
 
 ```yaml
     fields:
-      - { name: <fieldname>, label: <fieldlabel>, widget: rating }
+      - { name: Rating, label: Rate, widget: rating }
 ```
 
 
@@ -36,15 +47,3 @@ Build:
 ```shell
 npm run build
 ```
-
-### Rebuilding
-
-If you are rebuilding this package for production you'll need to make sure you update the Control and Preview names before running `npm run build`. eg.
-  ```js
-  if (typeof window !== 'undefined') {
-  window.RatingControl = Control
-  window.RatingPreview = Preview
-  }
-
-  export { Control as RatingControl, Preview as RatingPreview }
-  ```
