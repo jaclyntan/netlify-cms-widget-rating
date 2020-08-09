@@ -39,8 +39,8 @@ export default class Control extends React.Component {
     };
 
     return (
-      <div class={classNameWrapper}>
-        <div class="range-wrapper">
+      <div className={classNameWrapper}>
+        <div className="range-wrapper">
           <input
             type="range"
             min="0"
@@ -52,11 +52,11 @@ export default class Control extends React.Component {
             onChange={e => onChange(e.target.value)}
             style={inputStyle}
           />
-           <div class="custom-track">
-            <span class="custom-fill"></span>
-            <span class="custom-thumb"></span>
+           <div className="custom-track">
+            <span className="custom-fill"></span>
+            <span className="custom-thumb"></span>
           </div>
-          <output for={forID} aria-hidden="true" class="curr-value">{value || ''}</output>
+          <output for={forID} aria-hidden="true" className="curr-value">{value || ''}</output>
         </div>
       </div>
     );

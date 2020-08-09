@@ -1,3 +1,8 @@
+
+:root {
+  --colorActive: #3a69c7;
+  --colorGrayLight: #eff0f4;
+}
 .range-wrapper {
   position: relative;
   width: 100%;
@@ -35,8 +40,8 @@ input[type=range] {
 }
 
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0 0 2px 0px var(--colorGray);
-  background-color: var(--colorInfoText);
+  box-shadow: 0 0 5px 0px rgb(144 144 144 /80%);
+  background-color: var(--colorGrayLight);
   border-radius: 50%;
   cursor: pointer;
   z-index: 100;
@@ -46,29 +51,29 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=range]::-moz-range-thumb {
-  box-shadow: 0 0 2px 0px var(--colorGray);
-  background-color: var(--colorInfoText);
+  box-shadow: 0 0 5px 0px rgb(144 144 144 /80%);
+  background-color: var(--colorGrayLight);
   border-radius: 50%;
   cursor: pointer;
   z-index: 100;
   width: 15px;
   height:15px;
-  box-shadow: 0 0 2px 2px var(--colorGray);
+  -webkit-appearance: none;
 }
 
 input[type=range]::-ms-thumb {
-  box-shadow: 0 0 2px 0px var(--colorGray);
-  background-color: var(--colorInfoText);
+  box-shadow: 0 0 5px 0px rgb(144 144 144 /80%);
+  background-color: var(--colorGrayLight);
   border-radius: 50%;
   cursor: pointer;
   z-index: 100;
   width: 15px;
   height:15px;
-  box-shadow: 0 0 2px 2px var(--colorGray);
+  -webkit-appearance: none;
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 6px 0px var(--colorGray);
+  box-shadow: 0 0 5px 0px rgb(144 144 144 /80%);
   background-color: var(--colorActive);
   border-radius: 50%;
   cursor: pointer;
@@ -79,23 +84,23 @@ input[type=range]:focus::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-moz-range-thumb {
-  box-shadow: 0 0 6px 0px var(--colorGray);
+  box-shadow: 0 0 5px 0px rgb(144 144 144 /80%);
   background-color: var(--colorActive);
   border-radius: 50%;
   cursor: pointer;
   z-index: 100;
   width: 15px;
   height:15px;
-  box-shadow: 0 0 4px 2px var(--colorGray);
+  -webkit-appearance: none;
 }
 
 input[type=range]:focus::-ms-thumb {
-  box-shadow: 0 0 6px 0px var(--colorGray);
+  box-shadow: 0 0 5px 0px rgb(144 144 144 /80%);
   background-color: var(--colorActive);
   border-radius: 50%;
   cursor: pointer;
   z-index: 100;
   width: 15px;
   height:15px;
-  box-shadow: 0 0 4px 2px var(--colorGray);
+  -webkit-appearance: none;
 }
