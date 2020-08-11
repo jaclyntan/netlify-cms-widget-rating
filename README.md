@@ -4,7 +4,7 @@
 
 Add a rating widget to Netlify CMS.
 
-Uses a range slider with 0.5 step value between 0-10.
+Features a range slider with 0.5 step value between 0-10.
 
 ## How to use
 
@@ -20,7 +20,7 @@ Add to your Netlify CMS configuration:
   <body>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    <script src="https://unpkg.com/netlify-cms-widget-rating@0.0.1/dist/main.js"></script>
+    <script src="https://unpkg.com/netlify-cms-widget-rating/dist/main.js"></script>
     <script>
         const ratingWidget = window.NetlifyCmsWidgetRating;
         CMS.registerWidget('rating', ratingWidget.control, ratingWidget.preview);

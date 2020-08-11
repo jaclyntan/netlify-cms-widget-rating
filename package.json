@@ -10,8 +10,12 @@
     "widget",
     "rating"
   ],
-  "version": "0.0.1",
-  "homepage": "https://github.com/netlify/netlify-cms-widget-starter",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/jaclyntan/netlify-cms-widget-rating.git"
+  },
+  "version": "0.0.4",
+  "homepage": "https://github.com/jaclyntan/netlify-cms-widget-rating",
   "license": "MIT",
   "main": "dist/main.js",
   "devDependencies": {
