@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function Preview({ value }) {
-  return <div><strong>Rating:</strong> { value }</div>;
+export default function Preview({ field,value }) {
+  return <div><strong>{field.get('label')}:</strong> { value }</div>
 }
 
 Preview.propTypes = {

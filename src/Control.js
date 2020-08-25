@@ -9,7 +9,6 @@ export default class Control extends React.Component {
     value: PropTypes.node,
     classNameWrapper: PropTypes.string.isRequired,
   }
-
   static defaultProps = {
     value: '0',
   }

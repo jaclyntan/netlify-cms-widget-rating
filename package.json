@@ -11,19 +11,23 @@
     "rating"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/jaclyntan/netlify-cms-widget-rating.git"
+    "type": "git",
+    "url": "https://github.com/jaclyntan/netlify-cms-widget-rating.git"
   },
   "version": "0.0.4",
   "homepage": "https://github.com/jaclyntan/netlify-cms-widget-rating",
   "license": "MIT",
   "main": "dist/main.js",
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.11",
@@ -32,12 +36,12 @@
     "react": "^16.3.2",
     "source-map-loader": "^0.2.3",
     "style-loader": "^0.20.3",
-    "webpack": "4.19.1",
-    "webpack-cli": "2.1.4",
+    "webpack": "^4.44.1",
     "webpack-serve": "^0.3.1"
   },
   "dependencies": {
-    "prop-types": "^15.6.1"
+    "prop-types": "^15.6.1",
+    "webpack-cli": "^3.3.12"
   },
   "peerDependencies": {
     "react": "^16"
